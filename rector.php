@@ -14,10 +14,13 @@ return static function (RectorConfig $rectorConfig): void {
 
     // register a single rule
     $rectorConfig->rule(InlineConstructorDefaultToPropertyRector::class);
-    $rectorConfig->sets([SetList::PHP_83]);
+//    $rectorConfig->sets([SetList::DEAD_CODE]);
+//    $rectorConfig->sets([SetList::PHP_83]);
+    $rectorConfig->sets([LevelSetList::UP_TO_PHP_83]);
 
     // define sets of rules
-    //    $rectorConfig->sets([
-    //        LevelSetList::UP_TO_PHP_83
-    //    ]);
+//        $rectorConfig->sets([
+//            LevelSetList::UP_TO_PHP_83,
+//            SetList::DEAD_CODE,
+//        ]);
 };
