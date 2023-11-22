@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Phpbergen\\": "src"
+        }
+    },
+    "require-dev": {
+        "rector/rector": "^0.18.10"
+    }
+}
